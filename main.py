@@ -41,3 +41,6 @@ async def get_phone(id: str):
         if phone.id == id:
             return phone
     return {"error": "le phone comportant l'id fourni n'existe pas"}
+
+
+

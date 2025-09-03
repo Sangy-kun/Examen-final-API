@@ -1,0 +1,20 @@
+
+openapi: 3.0.3
+info:
+  title: STD24107
+  description: API de gestion des téléphones
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8000'
+paths:
+  /health:
+    get:
+      summary: Vérifie l'état de l'API
+      responses:
+        '200':
+          description: Retourne "Ok? "
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "Ok"
